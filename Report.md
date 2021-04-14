@@ -44,7 +44,7 @@ The following provides a list of the key files and directories in the main proje
 
 An approach adapting and combining the code from both the DDPG implementation of the Actor-Critic Methods lesson (where a DDPG implementation was applied to the OpenAI Gym Pendulum-v0 environment) and the MADDPG implementation of the Introduction to MARL lesson (where a MADDPG implemention was applied to a simple adversary environment) is employed as the basis for implementing the agent algorithms to solve the Tennis environment in this submission. The following papers - [Continuous Control with Deep RL](https://arxiv.org/pdf/1509.02971.pdf), [Multi-Agent Actor-Critic For Mixed Cooperative-Competitive Environments](https://papers.nips.cc/paper/2017/file/68a9750337a418a86fe06c1991a1d64c-Paper.pdf) are also used as a resource for the adaption and implementation details.
 
-The main training loop function `ddpg`, from DDPG implementation of the Actor-Critic Methods lesson, renamed as `training_loop` in the main training loop notebook file `P3.ipynb`, was then modified to work with the provided unity Tennis environment as it's API is slightly different than the way OpenAI gym works. This essentially boils down to replacing statements as follows -
+The main training loop function `ddpg`, from the DDPG implementation of the Actor-Critic Methods lesson, renamed as `training_loop` in the main training loop notebook file `P3.ipynb`, was then modified to work with the provided unity Tennis environment as it's API is slightly different than the way OpenAI gym works. This essentially boils down to replacing statements as follows -
 
 ```python
 # instantiating environment
