@@ -261,7 +261,7 @@ The `num_agents` variable is then used to loop through the local and target acto
 
 ##### Experience Replay Buffer
 
-Storage to the replay buffer consists of the high level (meaning all) actions and what is read by stepping the enironment (`env_info = env.step(action)[brain_name]`) in the `training_loop` code (see `P3.ipynb` notebook code) - `state, action, reward, next_state, done`. Where `state, action, reward, next_state, done` are the full set of observations (2x24), actions (2x2), rewards (2x1), next_state observations (2x24), and done (2x1) for all the agents, respectively. This is done to save some memory space by limiting the size of replay buffer's entries. The `sample` method of the `ReplayBuffer` class, pre-processes these saved entries as follows for use in the `learn` method of the MADDPG agent class.
+Storage to the replay buffer consists of the high level (meaning all) actions and what is read by stepping the environment (`env_info = env.step(action)[brain_name]`) in the `training_loop` code (see `P3.ipynb` notebook code) - `state, action, reward, next_state, done`. Where `state, action, reward, next_state, done` are the full set of observations (2x24), actions (2x2), rewards (2x1), next_state observations (2x24), and done (2x1) for all the agents, respectively. This is done to save some memory space by limiting the size of replay buffer's entries. The `sample` method of the `ReplayBuffer` class, pre-processes these saved entries as follows for use in the `learn` method of the MADDPG agent class.
 
 ```python
     def sample(self):
