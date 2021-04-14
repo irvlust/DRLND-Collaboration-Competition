@@ -370,7 +370,7 @@ The following is a plot of the final `G` scenario.
 
 Scenario G
 
-![Scenario G](./images/g.JPG)
+![Scenario G](./images/g.jpg)
 
 ## Discussion and Ideas for Future Work
 
