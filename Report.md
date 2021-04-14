@@ -376,6 +376,6 @@ Scenario G
 
 Clearly, the major difference in performance was a result of including the Batch Normalization process, something that was used in previous projects and should've therefore been included from the start.
 
-As for future work - further experimentation/investigation with other hyper-parameters such as `sigma` in the `Ornstein-Uhlenbeck` noise section, `tau` in the soft update section, including `reward scaling`, or experimenting with a deeper network, could potentially improve overall performanceand/or result in fewer episodes being required to solve the environment (possibly playing with the experience replay update could have resulted in a smoother set of average score curves).
+As for future work - further experimentation/investigation with other hyper-parameters such as `sigma` in the `Ornstein-Uhlenbeck` noise section, `tau` in the soft update section, including `reward scaling`, or experimenting with a deeper network, could potentially improve overall performance and/or result in fewer episodes being required to solve the environment (possibly playing with the experience replay update could have resulted in a smoother set of average score curves).
 
 Future work could also be to attack the `Play Soccer` optional challenge and, finally, I'd like to apply some of these algorithms to pixel based images where convolutional neural networks are used.
